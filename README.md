@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Backlog
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Arrumar cards da pagina inicial para ficar com uma foto atrás e o título e details
+- arrumar pagina de show de um cocktail para que seja um card
+- conferir formulários / tamanhos etc
+- adicionar description para um cocktail, opcional
