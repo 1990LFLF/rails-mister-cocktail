@@ -12,6 +12,8 @@
 @import "components/index";
 @import "pages/index";
 
+$back: #EF956E;
+
 body {
-  background-color: #EF956E;
+  background-color: $back;
 }
