@@ -1,12 +1,11 @@
-<div class="container" id="index">
-  <div class="row">
-      <% @cocktails.each do |cocktail| %>
-        <div class="card" style="width: 18em">
-          <div class="card-body">
-            <h2> <%= cocktail.name %> </h2>
-            <p> <em><strong><%= link_to 'Details', cocktail_path(cocktail) %></strong></em> </p>
-          </div>
+
+<div class="cards">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card">
+        <div class="card-body">
+          <h2> <%= cocktail.name %> </h2>
+          <p> <em><strong><%= link_to 'See details', cocktail_path(cocktail) %></strong></em> </p>
         </div>
-      <% end %>
-  </div>
+      </div>
+    <% end %>
 </div>
