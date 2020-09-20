@@ -1,10 +1,31 @@
 .navbar-lewagon {
+  display: flex;
   justify-content: space-between;
-  background: #EF956E;
-  box-shadow: 0 1px 8px #FCF2BE;
-  height: 50px;
+  align-items: center;
+  background: black;
+  height: 65px;
+  padding-left: 25px;
+  padding-right: 25px;
   font-family: 'Chau Philomene One', sans-serif;
-  color: #85496F;
+  color: white;
+
+  h2 {
+    font-size: 42px;
+    padding: 0 25px;
+  }
+
+  i {
+    font-size: 26px;
+  }
+
+  i:hover {
+    opacity: 0.7;
+  }
+}
+
+#logo {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-lewagon .navbar-collapse {
