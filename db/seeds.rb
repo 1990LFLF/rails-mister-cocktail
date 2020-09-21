@@ -24,7 +24,3 @@ arr.each do |ingredient|
   ingred = Ingredient.new(name: ingredient)
   ingred.save!
 end
-
-Cocktail.create(name: 'Mojito')
-Cocktail.create(name: 'Caipirinha')
-Cocktail.create(name: 'Dry Martini')
