@@ -37,6 +37,12 @@ a {
   justify-items: center;
 }
 
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+
 @media(max-width: 1200px) {
   .cards {
     grid-template-columns: 1fr 1fr;
@@ -45,15 +51,26 @@ a {
 
 @media(max-width: 750px) {
   .cards {
-    grid-template-columns: 1fr;;
+    grid-template-columns: 1fr;
   }
+
+  .card-category {
+    width: 310px;
+  }
+
+  form {
+  width: 310px;
 }
 
-form {
-  width: 500px;
-  margin: 0 auto;
+
 }
+
 
 .avoid-nav-overlap {
   margin-top: 80px;
 }
+
+// #add {
+//   background-position: top;
+
+// }
