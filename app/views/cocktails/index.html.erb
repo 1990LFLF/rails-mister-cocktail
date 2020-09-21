@@ -1,7 +1,7 @@
 
 <div class="cards avoid-nav-overlap">
     <%= link_to new_cocktail_path do %>
-      <div class="card-category" id="add" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path 'empty.jpeg'%>')">
+      <div class="card-category" id="add" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('')">
         <span>+</span>
       </div>
     <% end %>
@@ -11,7 +11,7 @@
             <% if  cocktail.photo.attached?%>
               <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key %>')">
             <% else %>
-              <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path 'default.jpeg'%>')">
+              <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('')">
             <% end %>
               <!-- asset_path "#{cocktail.name.downcase.split.join('_')}" -->
               <span><%= cocktail.name %></span>

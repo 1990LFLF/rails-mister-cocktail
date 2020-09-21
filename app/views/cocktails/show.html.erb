@@ -4,7 +4,7 @@
         <% if @cocktail.photo.attached?%>
           <%= cl_image_tag @cocktail.photo.key %>
         <% else %>
-          <%= image_tag "default.jpeg", alt: "alttext" %>
+          <%= image_tag "", alt: "no image uploaded" %>
         <% end %>
       </div>
 
