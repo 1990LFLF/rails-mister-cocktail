@@ -1,11 +1,9 @@
-<div class="container">
+<div class="container avoid-nav-overlap">
 
   <h2>Create a cocktail</h2>
-  <div class="">
     <%= simple_form_for @cocktail do |f| %>
     <%= f.input :name %>
     <%= f.button :submit, class: "btn btn-primary" %>
     <% end %>
-  </div>
 
 </div>

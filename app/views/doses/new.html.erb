@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container avoid-nav-overlap">
   <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :description   %>
   <%= f.association :ingredient %> <!-- Não tem campo de erro quando usa association, teria que alterar simple_form no config -->
