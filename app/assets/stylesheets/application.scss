@@ -20,22 +20,28 @@ body {
 
 a {
   color: rgba(0,0,0,0.7);
+  &:hover {
+    text-decoration: none;
+  }
 }
+
+
 
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 30px;
   margin: 10px 25px;
+  justify-items: center;
 }
 
-@media(max-width: 992px) {
+@media(max-width: 1200px) {
   .cards {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media(max-width: 550px) {
+@media(max-width: 750px) {
   .cards {
     grid-template-columns: 1fr;;
   }
