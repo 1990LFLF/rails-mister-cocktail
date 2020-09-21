@@ -2,7 +2,8 @@
 
 Backlog
 
-- Arrumar cards da pagina inicial para ficar com uma foto atrás e o título e details
+- deploy on heroku
+- photos feature
 - arrumar pagina de show de um cocktail para que seja um card
 - conferir formulários / tamanhos etc
 - adicionar description para um cocktail, opcional
