@@ -12,9 +12,17 @@ url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 ingr_serialized = open(url).read
 ingr = JSON.parse(ingr_serialized)
 
+arr = []
+
 ingr['drinks'].each do |hash|
-  ingr = Ingredient.new(name: hash['strIngredient1'])
-  ingr.save!
+  arr << hash['strIngredient1']
+end
+
+arr.sort!
+
+arr.each do |ingredient|
+  ingred = Ingredient.new(name: ingredient)
+  ingred.save!
 end
 
 Cocktail.create(name: 'Mojito')
