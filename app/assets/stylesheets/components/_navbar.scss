@@ -1,6 +1,6 @@
 .navbar-lewagon {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background: black;
   height: 65px;
@@ -13,6 +13,10 @@
   h2 {
     font-size: 42px;
     padding: 0 25px;
+    color: white !important;
+    &:hover {
+       opacity: 0.7;
+    }
   }
 
   i {

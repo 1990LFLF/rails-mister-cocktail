@@ -14,22 +14,14 @@
 
   <body>
     <div class="navbar-lewagon">
-        <div class="dropdown">
-            <i id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="fas fa-bars"></i>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <%= link_to ' Cocktail', new_cocktail_path, class: "fas fa-plus dropdown-item" %>
-            <%= link_to ' Back to home', cocktails_path, class: "fas fa-undo-alt dropdown-item"  %>
-          </div>
-        </div>
         <div id="logo">
           <i class="fas fa-glass-martini"></i>
-          <h2>Cocktail Time!</h2>
+          <%= link_to cocktails_path do %>
+            <h2>Cocktail Time!</h2>
+          <% end %>
           <i class="fas fa-glass-martini"></i>
         </div>
-         <p></p> <!-- to keep space-between working good! -->
     </div>
-
-
     <%= yield %>
   </body>
 </html>
